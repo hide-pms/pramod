@@ -449,12 +449,39 @@ nav ul li a {
   background: #fff;
     border-radius: 2px;
     border: 5px solid #fff;
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.07);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+   
     overflow: hidden;
+    transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
     
 }
-
+.portfolio-thumbnail:hover img {
+  transform: scale(1.5) rotateZ(-5deg);
+  -moz-transform: scale(1.5) rotateZ(-5deg);
+  -webkit-transform: scale(1.5) rotateZ(-5deg);
+  -o-transform: scale(1.5) rotateZ(-5deg);
+}
+.portfolio-thumbnail .hoverShow1{
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.80);
+  width: calc(100% - 30px);
+  font-size: 18px;
+  height: 40px;
+  top: 218px;
+  padding: 10px;
+  color: #fff;
+  transition: all 0.2s ease-in-out 0s;
+    -moz-transition: all 0.2s ease-in-out 0s;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    -o-transition: all 0.2s ease-in-out 0s;
+}
+.portfolio-thumbnail:hover .hoverShow1{
+ display: block;
+ 
+}
 /*-----------------------------------------------------------------------------------*/
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
@@ -635,4 +662,14 @@ nav ul li a {
 
 .credits {
   font-size: 13px;
+}
+ 
+.effect2
+{
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
+}
+a:hover .effect2{
+  box-shadow: 0 1px 3px 0 rgba(32,33,36,0.48);
+  border-color: rgba(223,225,229,0);
 }
